@@ -47,10 +47,10 @@
 
 </head>
 
-<body class="manrope-font">
-    <header class="container mx-auto">
+<body class="manrope-font ">
+    <header class="container mx-auto lg:max-w-[1170px] lg:px-6">
         <!-- navbar -->
-        <nav class="mb-12">
+        <nav class="mb-12 container mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -150,9 +150,9 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto">
+    <main class="container mx-auto lg:max-w-[1170px] lg:px-6">
         <!-- hockeys club section -->
-        <section class="m-24 text-center mx-5">
+        <section class="m-24 text-center mx-5 ">
             <!-- content container -->
             <div class="lg:p-8 p-6 border-y-2 border-dashed border-border-color mb-12">
                 <h3 class="text-header-color font-extrabold lg:text-4xl text-2xl mb-6">Professional Hockeys Club</h3>
@@ -293,22 +293,27 @@
                     essentials designed to support your game on and off the field.</p>
             </div>
             <!-- card container -->
-            <div class="grid grid-cols1 lg:grid-cols-2 c gap-5 container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
                 <!-- card-1 -->
-                <div class="flex flex-row justify-center items-center bg-base-100 shadow-xl card">
-                    <img src="images/5.png" alt="jacket" class="rounded-xl w-full max-w-80 p-6" />
-                    <div class="card-body text-left flex-1">
+                <div class="flex flex-col gap-5 lg:flex-row items-center bg-base-100 border border-gray-200 rounded-xl shadow-none hover:shadow-xl duration-300 cursor-pointer p-6 ">
+                    
+                    <div class="w-full h-full md:max-h-[170px] md:max-w-[180px] mx-auto">
+                        <img src="images/product6.png" alt="jacket" class="rounded-xl h-full w-full object-cover  md:max-h-[170px] md:max-w-[180px]"/>
+                    </div>
+                     
+                    
+                    <div class="text-left min-w-0  flex-1 lg:min-w-[310px] w-full">
                         <!-- icons container -->
-                        <div class="flex gap-4 items-center mb-3">
+                        <div class="flex gap-x-4 items-center mb-3">
                             <div class="rating flex gap-1 items-center">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                                 <p class="font-medium text-description-color">5.0</p>
                             </div>
-                            <div class="flex gap-1 items-center">
+                            <div class="flex gap-x-1 items-center">
                                 <i class="fa-regular fa-eye text-description-color"></i>
                                 <p class="font-medium text-description-color">20</p>
                             </div>
-                            <div class="flex gap-1 items-center">
+                            <div class="flex gap-x-1 items-center">
                                 <i class="fa-regular fa-heart text-description-color"></i>
                                 <p class="font-medium text-description-color">200</p>
                             </div>
@@ -317,7 +322,7 @@
                         </h2>
                         <p class="text-description-color font-medium mb-4">Stay warm and stylish with our premium
                             jacket, made for comfort and everyday performance.</p>
-                        <div class="flex justify-between items-center">
+                        <div class="flex flex-col lg:flex-row lg:items-center flex-wrap gap-5 ">
                             <h4 class="text-red-color font-extrabold text-lg">Price - $22.00</h4>
                             <div class="flex gap-1 items-center">
                                 <i class="fa-solid fa-cart-shopping text-description-color"></i>
@@ -326,20 +331,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-row justify-center items-center bg-base-100 shadow-xl card">
-                    <img src="images/5.png" alt="jacket" class="rounded-xl w-full max-w-80 p-6" />
-                    <div class="card-body text-left flex-1">
+                <!-- card-2 -->
+                <div class="flex flex-col gap-5 lg:flex-row items-center bg-base-100 border border-gray-200 rounded-xl shadow-none hover:shadow-xl duration-300 cursor-pointer p-6 ">
+                    
+                    <div class="w-full h-full md:max-h-[170px] md:max-w-[180px] mx-auto">
+                        <img src="images/product6.png" alt="jacket" class="rounded-xl h-full w-full object-cover  md:max-h-[170px] md:max-w-[180px]"/>
+                    </div>
+                     
+                    
+                    <div class="text-left min-w-0  flex-1 lg:min-w-[310px] w-full">
                         <!-- icons container -->
-                        <div class="flex gap-4 items-center mb-3">
+                        <div class="flex gap-x-4 items-center mb-3">
                             <div class="rating flex gap-1 items-center">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                                 <p class="font-medium text-description-color">5.0</p>
                             </div>
-                            <div class="flex gap-1 items-center">
+                            <div class="flex gap-x-1 items-center">
                                 <i class="fa-regular fa-eye text-description-color"></i>
                                 <p class="font-medium text-description-color">20</p>
                             </div>
-                            <div class="flex gap-1 items-center">
+                            <div class="flex gap-x-1 items-center">
                                 <i class="fa-regular fa-heart text-description-color"></i>
                                 <p class="font-medium text-description-color">200</p>
                             </div>
@@ -348,22 +359,165 @@
                         </h2>
                         <p class="text-description-color font-medium mb-4">Stay warm and stylish with our premium
                             jacket, made for comfort and everyday performance.</p>
-                        <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
-    <h4 class="text-red-color font-extrabold text-lg whitespace-nowrap">
-        Price - $22.00
-    </h4>
-
-    <div class="flex gap-1 items-center whitespace-nowrap">
-        <i class="fa-solid fa-cart-shopping text-description-color"></i>
-        <p class="font-medium text-description-color">
-            Delivery Fee : Free
-        </p>
-    </div>
-</div>
+                        <div class="flex flex-col lg:flex-row lg:items-center flex-wrap gap-5 ">
+                            <h4 class="text-red-color font-extrabold text-lg">Price - $22.00</h4>
+                            <div class="flex gap-1 items-center">
+                                <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                                <p class="font-medium text-description-color">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="flex flex-col gap-5 lg:flex-row items-center bg-base-100 border border-gray-200 rounded-xl shadow-none hover:shadow-xl duration-300 cursor-pointer p-6 ">
+                    
+                    <div class="w-full h-full md:max-h-[170px] md:max-w-[180px] mx-auto">
+                        <img src="images/product6.png" alt="jacket" class="rounded-xl h-full w-full object-cover  md:max-h-[170px] md:max-w-[180px]"/>
+                    </div>
+                     
+                    
+                    <div class="text-left min-w-0  flex-1 lg:min-w-[310px] w-full">
+                        <!-- icons container -->
+                        <div class="flex gap-x-4 items-center mb-3">
+                            <div class="rating flex gap-1 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <p class="font-medium text-description-color">5.0</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-eye text-description-color"></i>
+                                <p class="font-medium text-description-color">20</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-heart text-description-color"></i>
+                                <p class="font-medium text-description-color">200</p>
+                            </div>
+                        </div>
+                        <h2 class="card-title text-xl font-extrabold text-header-color mb-3">World Cup Flags Football
+                        </h2>
+                        <p class="text-description-color font-medium mb-4">Stay warm and stylish with our premium
+                            jacket, made for comfort and everyday performance.</p>
+                        <div class="flex flex-col lg:flex-row lg:items-center flex-wrap gap-5 ">
+                            <h4 class="text-red-color font-extrabold text-lg">Price - $22.00</h4>
+                            <div class="flex gap-1 items-center">
+                                <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                                <p class="font-medium text-description-color">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="flex flex-col gap-5 lg:flex-row items-center bg-base-100 border border-gray-200 rounded-xl shadow-none hover:shadow-xl duration-300 cursor-pointer p-6 ">
+                    
+                    <div class="w-full h-full md:max-h-[170px] md:max-w-[180px] mx-auto">
+                        <img src="images/product6.png" alt="jacket" class="rounded-xl h-full w-full object-cover  md:max-h-[170px] md:max-w-[180px]"/>
+                    </div>
+                     
+                    
+                    <div class="text-left min-w-0  flex-1 lg:min-w-[310px] w-full">
+                        <!-- icons container -->
+                        <div class="flex gap-x-4 items-center mb-3">
+                            <div class="rating flex gap-1 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <p class="font-medium text-description-color">5.0</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-eye text-description-color"></i>
+                                <p class="font-medium text-description-color">20</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-heart text-description-color"></i>
+                                <p class="font-medium text-description-color">200</p>
+                            </div>
+                        </div>
+                        <h2 class="card-title text-xl font-extrabold text-header-color mb-3">World Cup Flags Football
+                        </h2>
+                        <p class="text-description-color font-medium mb-4">Stay warm and stylish with our premium
+                            jacket, made for comfort and everyday performance.</p>
+                        <div class="flex flex-col lg:flex-row lg:items-center flex-wrap gap-5 ">
+                            <h4 class="text-red-color font-extrabold text-lg">Price - $22.00</h4>
+                            <div class="flex gap-1 items-center">
+                                <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                                <p class="font-medium text-description-color">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="flex flex-col gap-5 lg:flex-row items-center bg-base-100 border border-gray-200 rounded-xl shadow-none hover:shadow-xl duration-300 cursor-pointer p-6 ">
+                    
+                    <div class="w-full h-full md:max-h-[170px] md:max-w-[180px] mx-auto">
+                        <img src="images/product6.png" alt="jacket" class="rounded-xl h-full w-full object-cover  md:max-h-[170px] md:max-w-[180px]"/>
+                    </div>
+                     
+                    
+                    <div class="text-left min-w-0  flex-1 lg:min-w-[310px] w-full">
+                        <!-- icons container -->
+                        <div class="flex gap-x-4 items-center mb-3">
+                            <div class="rating flex gap-1 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <p class="font-medium text-description-color">5.0</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-eye text-description-color"></i>
+                                <p class="font-medium text-description-color">20</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-heart text-description-color"></i>
+                                <p class="font-medium text-description-color">200</p>
+                            </div>
+                        </div>
+                        <h2 class="card-title text-xl font-extrabold text-header-color mb-3">World Cup Flags Football
+                        </h2>
+                        <p class="text-description-color font-medium mb-4">Stay warm and stylish with our premium
+                            jacket, made for comfort and everyday performance.</p>
+                        <div class="flex flex-col lg:flex-row lg:items-center flex-wrap gap-5 ">
+                            <h4 class="text-red-color font-extrabold text-lg">Price - $22.00</h4>
+                            <div class="flex gap-1 items-center">
+                                <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                                <p class="font-medium text-description-color">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="flex flex-col gap-5 lg:flex-row items-center bg-base-100 border border-gray-200 rounded-xl shadow-none hover:shadow-xl duration-300 cursor-pointer p-6 ">
+                    
+                    <div class="w-full h-full md:max-h-[170px] md:max-w-[180px] mx-auto">
+                        <img src="images/product6.png" alt="jacket" class="rounded-xl h-full w-full object-cover  md:max-h-[170px] md:max-w-[180px]"/>
+                    </div>
+                     
+                    
+                    <div class="text-left min-w-0  flex-1 lg:min-w-[310px] w-full">
+                        <!-- icons container -->
+                        <div class="flex gap-x-4 items-center mb-3">
+                            <div class="rating flex gap-1 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <p class="font-medium text-description-color">5.0</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-eye text-description-color"></i>
+                                <p class="font-medium text-description-color">20</p>
+                            </div>
+                            <div class="flex gap-x-1 items-center">
+                                <i class="fa-regular fa-heart text-description-color"></i>
+                                <p class="font-medium text-description-color">200</p>
+                            </div>
+                        </div>
+                        <h2 class="card-title text-xl font-extrabold text-header-color mb-3">World Cup Flags Football
+                        </h2>
+                        <p class="text-description-color font-medium mb-4">Stay warm and stylish with our premium
+                            jacket, made for comfort and everyday performance.</p>
+                        <div class="flex flex-col lg:flex-row lg:items-center flex-wrap gap-5 ">
+                            <h4 class="text-red-color font-extrabold text-lg">Price - $22.00</h4>
+                            <div class="flex gap-1 items-center">
+                                <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                                <p class="font-medium text-description-color">Delivery Fee : Free</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                
+               
 
 
             </div>
