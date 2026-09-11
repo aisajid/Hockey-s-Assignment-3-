@@ -37,9 +37,12 @@
                         'border-color': 'rgba(19, 19, 24, 0.2)',
                         'border-color2': 'rgba(19, 19, 24, 0.1)',
                         'gray-color': '#E7E7E8',
-
-
-
+                        'first-box-color': 'rgba(188, 237, 109, 0.1)',
+                        'second-box-color': 'rgba(253, 221, 95, 0.1)',
+                        'third-box-color': 'rgba(98, 156, 243, 0.1)',
+                        'input-bg-color': 'rgba(19, 19, 24, 0.03)',
+                        'footer-bg-color': '#1E1E1E',
+                        'footer-text-color': 'rgba(255, 255, 255, 0.6)',
                     }
                 }
             }
@@ -49,11 +52,11 @@
 </head>
 
 <body class="manrope-font">
-    <header class="container mx-auto lg:max-w-[1170px] lg:px-6">
+    <header class="container mx-auto lg:max-w-[1170px] md:px-6">
         <!-- navbar -->
-        <nav class="mb-12 container mx-auto">
+        <nav class="my-12 mx-auto px-4">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class="navbar-start w-auto flex-1">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -98,6 +101,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- hero section -->
         <div class="relative z-0 w-[90%] md:w-full mx-auto">
             <div class="carousel w-full">
@@ -153,7 +157,7 @@
     </header>
     <main class="container mx-auto lg:max-w-[1170px] lg:px-6">
         <!-- hockeys club section -->
-        <section class="m-24 text-center mx-5 ">
+        <section class="m-24 text-center mx-5">
             <!-- content container -->
             <div class="lg:p-8 p-6 border-y-2 border-dashed border-border-color mb-12">
                 <h3 class="text-header-color font-extrabold lg:text-4xl text-2xl mb-6">Professional Hockeys Club</h3>
@@ -538,7 +542,8 @@
                     Find helpful answers to common client questions and get the support you need quickly and easily.</p>
             </div>
             <!-- box container -->
-            <div class="p-8 rounded-2xl border-2 border-border-color2 flex flex-col lg:flex-row gap-10 items-center justify-center">
+            <div
+                class="p-8 rounded-2xl border-2 border-border-color2 flex flex-col lg:flex-row gap-10 items-center justify-center">
                 <!-- img container -->
                 <div class="max-w-96 w-full h-[180px] lg:h-full">
                     <img src="Images/11.png" alt="img" class="w-full h-[200px] lg:h-full">
@@ -617,18 +622,203 @@
 
         </section>
         <!-- get in touch -->
-         <section class="m-24 text-center mx-5">
+        <section class="m-24 text-center mx-5">
             <!-- content container -->
-            <div class="lg:p-8 p-6 border-y-2 border-dashed border-border-color mb-12">
+            <div class="lg:p-8 p-6 border-y-2 border-dashed border-border-color mb-12 ">
                 <h3 class="text-header-color font-extrabold lg:text-4xl text-2xl mb-6">Get In Touch</h3>
-                <p class="text-description-color font-medium max-w-2xl mx-auto">Have questions or need more information? We’d love to hear from you. Get in touch with us today and our team will be happy to assist you with any inquiries, bookings, or support you may need.</p>
+                <p class="text-description-color font-medium max-w-2xl mx-auto">Have questions or need more information?
+                    We'd love to hear from you. Get in touch with us today and our team will be happy to assist you with
+                    any inquiries, bookings, or support you may need.</p>
             </div>
-            
-         </section>
+            <!-- box container -->
+            <div class="flex md:flex-row flex-col gap-6 items-center">
+                <!-- right box -->
+                <div class="p-12 max-w-md space-y-6 border-2 border-border-color2 rounded-2xl h-[760px]">
+                    <!-- first box -->
+                    <div class=" bg-first-box-color p-8 pb-12 text-left">
+                        <img src="Images/Group 1171275317.png" alt="" class="mb-6 w-12 h-12">
+                        <p class="text-descripton-color">Phone Number : </p>
+                        <h4 class="font-extrabold text-header-color text-lg">(+62) 123-321-543</h4>
+                    </div>
+                    <!-- second box -->
+                    <div class=" bg-second-box-color p-8 pb-12 text-left">
+                        <img src="Images/Group 1171275318.png" alt="" class="mb-6 w-12 h-12">
+                        <p class="text-descripton-color">Email : </p>
+                        <h4 class="font-extrabold text-header-color text-lg">hockeys@support.com</h4>
+                    </div>
+                    <!-- third box -->
+                    <div class=" bg-third-box-color p-8 pb-12 text-left">
+                        <img src="Images/Group 1171275321.png" alt="" class="mb-6 w-12 h-12">
+                        <p class="text-descripton-color">Location : </p>
+                        <h4 class="font-extrabold text-header-color text-lg">152/1 Mohakhali Wireless Gate</h4>
+                    </div>
 
+                </div>
+                <!-- left box -->
+                <div class="w-full">
+                    <form class="grid grid-cols-1 md:grid-cols-2 w-full gap-6 text-left">
+                        <label for="name" class="block text-xl font-bold text-header-color w-full">Your Name
+                            <input type="name" placeholder="Enter your full name"
+                                class="input block w-full h-14 text-description-color bg-input-bg-color border-none mt-4 focus:outline-none font-normal" />
+                        </label>
+                        <label for="email" class="text-xl font-bold text-header-color w-full">Your Email
+                            <input type="email" placeholder="Enter your email"
+                                class="input block input-bordered w-full h-14 text-description-color bg-input-bg-color border-none mt-4 focus:outline-none font-normal" />
+                        </label>
+                        <label for="text" class="block text-xl font-bold text-header-color w-full">Subject
+                            <input type="text" placeholder="Enter your subject"
+                                class="input block input-bordered w-full h-14 text-description-color bg-input-bg-color border-none mt-4 focus:outline-none font-normal" />
+                        </label>
+                        <label for="number" class="block text-xl font-bold text-header-color w-full">Phone Number
+                            <input type="number" placeholder="Enter your phone number"
+                                class="input block input-bordered w-full h-14 text-description-color bg-input-bg-color border-none mt-4 focus:outline-none font-normal" />
+                        </label>
 
+                        <label for="terabox"
+                            class="block text-xl text-header-color font-bold text-left w-full md:col-span-2">Message
+                            <textarea placeholder="Write your message"
+                                class="block textarea textarea-bordered textarea-lg w-full h-[370px] text-description-color bg-input-bg-color border-none focus:outline-none font-normal mt-4 md:col-span-2"></textarea>
+                        </label>
+                    </form>
+                    <button
+                        class="mt-8 py-4 rounded-xl bg-red-color text-xl font-bold text-white normal-case w-full ">Send
+                        Message</button>
+
+                </div>
+            </div>
+            <!-- social media box -->
+            <div class="rounded-xl bg-input-bg-color py-9 mt-12">
+                <h3 class="text-2xl font-extrabold text-header-color mb-6">Social Media</h3>
+                <ul class="list-none flex items-center justify-center gap-8">
+                    <li><a href=""
+                            class="inline-block text-header-color list-none decoration-none hover:text-red-color duration-200 hover:scale-125"><i
+                                class="fa-brands fa-twitter text-xl " aria-hidden="true"></i></a></li>
+                    <li><a href=""
+                            class="inline-block text-header-color list-none decoration-none hover:text-red-color duration-200 hover:scale-125"><i
+                                class="fa-brands fa-facebook-f text-xl" aria-hidden="true"></i></a></li>
+                    <li><a href=""
+                            class="inline-block text-header-color list-none decoration-none hover:text-red-color duration-200 hover:scale-125"><i
+                                class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></a></li>
+                    <li><a href=""
+                            class="inline-block text-header-color list-none decoration-none hover:text-red-color duration-200 hover:scale-125"><i
+                                class="fa-brands fa-github text-xl" aria-hidden="true"></i></a></li>
+                    <li><a href=""
+                            class="inline-block text-header-color list-none decoration-none hover:text-red-color duration-200 hover:scale-125"><i
+                                class="fa-brands fa-square-linkedin text-xl" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="w-full bg-header-color">
+        <div class="container mx-auto px-6 lg:max-w-[1170px]">
+            <div class="py-24 flex gap-10 justify-start flex-col md:flex-row">
+
+                <!--first column  -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-center md:text-left text-[#FFFFFF] text-3xl font-extrabold">Get In Touch</h3>
+                    <p class="font-medium text-footer-text-color mt-4 max-w-96 w-full text-base">Connect with us easily.
+                        For inquiries, support, or collaboration, reach out. We're here to assist and engage with you.
+                    </p>
+                    <a class="hover:cursor-pointer gap-4 flex mt-6 justify-center md:justify-normal"><i
+                            class="fa-regular fa-envelope text-xl bg-transparent text-red-color"></i> <span
+                            class="text font-medium text-footer-text-color text-base">hockeys@support.com</span></a>
+                    <a class="hover:cursor-pointer gap-4 flex mt-4 justify-center md:justify-normal"><i
+                            class="fa-solid fa-phone text-xl bg-transparent text-red-color"> </i> <span
+                            class="text font-medium text-footer-text-color text-base">(+62) 123-321-543</span></a>
+                </div>
+
+                <div
+                    class="flex justify-around gap-16 flex-col md:flex-row mx-auto w-full flex-wrap md:flex-nowrap flex-1">
+                    <!-- second column -->
+                    <div class="w-full">
+                        <h3 class="text-[#FFFFFF] text-3xl font-extrabold mb-7 text-center md:text-left">Company</h3>
+                        <ul class="text-center md:text-left">
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">About us</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Leadership</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Careers</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">News & Article</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Legal Notice</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!--Third column -->
+                    <div class="w-full">
+                        <h3 class="text-[#FFFFFF] text-3xl font-extrabold mb-7 text-center md:text-left">Support</h3>
+                        <ul class="text-center md:text-left">
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Help Center</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">FAQ</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Ticket Support</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- fourth column -->
+                    <div class="w-full">
+                        <h3 class="text-[#FFFFFF] text-3xl font-extrabold mb-7 text-center md:text-left">Services</h3>
+                        <ul class="text-center md:text-left">
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Academy</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Group Lesson</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Private Lesson</a>
+                            </li>
+
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Hockeys for kids</a>
+                            </li>
+                            <li
+                                class="hover:text-red-color duration-200 font-medium text-footer-text-color text-base leading-10">
+                                <a href="">Hockeys for Adult</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
